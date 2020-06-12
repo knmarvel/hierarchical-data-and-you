@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from filecabinet.urls import urlpatterns as filecabinet_urls
+from filecabinet.urls import urlpatterns as filecabinet_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# urlpatterns += filecabinet_urls
+urlpatterns += filecabinet_urls

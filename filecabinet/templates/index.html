@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load mptt_tags %}
+{% block content %}
+<h1>Home</h1>
+    <div class="user-info"><h2>Logged In User Information</h2>
+        <b>Username: </b>{{ request.user.username }} <br />
+        <b>Display Name: </b>{{ request.user.display_name }} <br />
+        <a href="/logout/">Logout</a>
+    </div>
+    <div class="filefolderdata">
+        <h2>Folders and files</h2>
+            <ul class="root">
+                {% recursetree data %}
+                    <li>
+                        {{ node.name }}
+                        {% if not node.is_leaf_node %}
+                            <ul class="children">
+                                {{ children }}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endrecursetree %}
+            </ul>
+    </div>
+<br />
+
+
+{% endblock %} 
