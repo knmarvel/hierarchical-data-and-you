@@ -45,79 +45,16 @@ Submit a link to your GitHub repo.
 
 https://github.com/<github_username>/hierarchical_data
 
-Rubric
-A rubric short of a full load
-A rubric short of a full load
-Criteria 	Ratings 	Pts
-This criterion is linked to a Learning Outcome DB is committed with repo
+README included in repo that explains the project and anything needed to run it.
 	
-2.0 pts
-Full Marks
+CHECK - uses django-mptt to create one model: a file object that can be a folder or a "file"
 	
-0.0 pts
-No Marks
+CHECK - Uses django-mptt draggable admin to make modifications easy in the admin panel
 	
-2.0 pts
-This criterion is linked to a Learning Outcome README included in repo that explains the project and anything needed to run it.
+Displays the built tree on the homepage
 	
-2.0 pts
-Full Marks
+3 BONUS POINTS: Add forms to create folders / "files" without using the admin panel.
 	
-0.0 pts
-No Marks
+5 BONUS POINTS: Add a basic authentication system where each user has their own tree. Login / logout pages / endpoints included.
 	
-2.0 pts
-This criterion is linked to a Learning Outcome uses django-mptt to create one model: a file object that can be a folder or a "file"
-	
-4.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-4.0 pts
-This criterion is linked to a Learning Outcome Uses django-mptt draggable admin to make modifications easy in the admin panel
-	
-2.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-2.0 pts
-This criterion is linked to a Learning Outcome Displays the built tree on the homepage
-	
-3.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-3.0 pts
-This criterion is linked to a Learning Outcome 3 BONUS POINTS: Add forms to create folders / "files" without using the admin panel.
-	
-0.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-0.0 pts
-This criterion is linked to a Learning Outcome 5 BONUS POINTS: Add a basic authentication system where each user has their own tree. Login / logout pages / endpoints included.
-	
-0.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-0.0 pts
-This criterion is linked to a Learning Outcome Repo contains pyproject.toml that includes all necessary dependencies to run application
-	
-2.0 pts
-Full Marks
-	
-0.0 pts
-No Marks
-	
-2.0 pts
+CHECK - Repo contains pyproject.toml that includes all necessary dependencies to run application
