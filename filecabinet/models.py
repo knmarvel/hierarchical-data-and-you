@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from mptt.models import MPTTModel, TreeForeignKey
 
 # Create your models here.
@@ -7,6 +8,7 @@ class File(MPTTModel):
         max_length=200,
         unique=True
         )
+
     parent = TreeForeignKey(
         'self', 
         on_delete=models.CASCADE,
@@ -14,7 +16,7 @@ class File(MPTTModel):
         blank=True,
         related_name="children"
         )
-    
+
     class MPTTMeta:
         order_insertion_by = ['name']
     

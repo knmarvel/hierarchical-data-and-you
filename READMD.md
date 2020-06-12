@@ -15,8 +15,8 @@ CHECK - Uses django-mptt draggable admin to make modifications easy in the admin
 	
 CHECK - Displays the built tree on the homepage
 	
-3 BONUS POINTS: Add forms to create folders / "files" without using the admin panel.
+CHECK -- 3 BONUS POINTS: Add forms to create folders / "files" without using the admin panel.
 	
-5 BONUS POINTS: Add a basic authentication system where each user has their own tree. Login / logout pages / endpoints included.
+TODO -- 5 BONUS POINTS: Add a basic authentication system where each user has their own tree. Login / logout pages / endpoints included.
 	
 CHECK - Repo contains pyproject.toml that includes all necessary dependencies to run application
